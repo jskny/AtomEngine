@@ -1,0 +1,47 @@
+﻿// タスクシステムマルチスレッド テスト
+// 2013 / 02 / 26
+
+
+
+aen::system::task::ManagerMT g_test;
+
+
+class TestAAAA : public aen::system::task::Process
+{
+public:
+	void		update(void)
+	{
+		cout << "HELLO : " << (unsigned)this << endl;
+		Sleep(1000);
+	}
+
+
+	void		init(void)
+	{
+		cout << "I was born !! : " << (unsigned)this << endl;
+	}
+
+
+};
+
+
+void Test(void)
+{
+	for (int i = 0; i < 3; ++i) {
+		g_test.attach(boost::shared_ptr<aen::system::task::Process>(new TestAAAA()));
+		Sleep(100 * i);
+	}
+
+
+	for (int i = 0; i < 10; ++i) {
+		g_test.update();
+	}
+}
+
+
+int main(void)
+{
+	Test();
+	return (0);
+}
+

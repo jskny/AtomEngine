@@ -1,0 +1,20 @@
+﻿// タイトル。
+var g_bg = Aen.Call("EvLoadGraph", "./data/graphic/bg/title.png");
+var flagLoop = 1;
+var counter = 200;
+while (flagLoop) {
+	flagLoop = Aen.Call("EvSystem");
+	Aen.Call("EvScreenClear");
+	Aen.Call("EvDrawGraph", counter, 0, g_bg[0]);
+//	Aen.Call("EvSleep", 1);
+	Aen.Call("EvScreenFlip");
+
+
+	if (counter <= 0) {
+		Aen.Call("EvChangeScene", "main");
+	}
+
+
+	counter--;
+}
+

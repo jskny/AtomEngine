@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="scripting">
+      <UniqueIdentifier>{5d6f2aef-bfbf-462d-a116-939e92ce470b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scene">
+      <UniqueIdentifier>{0ba47c3b-c587-4e7a-8d09-f58d2f5e427a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scene\title">
+      <UniqueIdentifier>{6dbe7430-b1f9-4d78-8e1e-69c8331fc84e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sprite">
+      <UniqueIdentifier>{56a55edf-cc4f-4091-a1cc-658acd623961}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject">
+      <UniqueIdentifier>{b96d9426-f1bf-4330-ab8d-911898daccbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="input">
+      <UniqueIdentifier>{4b91f0e2-f697-4312-b4e3-348c99df5f71}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="g_title.cpp">
+      <Filter>scene\title</Filter>
+    </ClCompile>
+    <ClCompile Include="evenshooter.cpp" />
+    <ClCompile Include="sprite.cpp">
+      <Filter>sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="scripting.cpp">
+      <Filter>scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="input.cpp">
+      <Filter>input</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="g_title.h">
+      <Filter>scene\title</Filter>
+    </ClInclude>
+    <ClInclude Include="evenshooter.h" />
+    <ClInclude Include="sprite.h">
+      <Filter>sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="object_game.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="scripting.h">
+      <Filter>scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="input.h">
+      <Filter>input</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="AtomEngine">
+      <UniqueIdentifier>{0c640417-2d26-45a1-ba9b-c63759e3bfde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AtomEngine\system">
+      <UniqueIdentifier>{8e40733a-8d2e-44ed-b91b-42783caadaf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AtomEngine\hash">
+      <UniqueIdentifier>{4661abcf-4e09-4049-88f9-4cffc4ff9e6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AtomEngine\thread">
+      <UniqueIdentifier>{7d549d2e-4154-4883-a397-a87026d27bf7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AtomEngine\thread\thread">
+      <UniqueIdentifier>{29681201-09f4-453f-a3f3-7908c94c8487}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AtomEngine\thread\mutex">
+      <UniqueIdentifier>{b8137b5c-8376-4eb4-98a9-bdc498c5dca3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AtomEngine\thread\critical_session">
+      <UniqueIdentifier>{99200566-877a-45ea-9fd6-dddf5dae537b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AtomEngine\profiler">
+      <UniqueIdentifier>{b0ebd547-2f48-4473-aa30-c0c61c121be7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AtomEngine\util">
+      <UniqueIdentifier>{ca5d6ebb-bbf3-466f-9799-f9fc5ae2bf06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AtomEngine\scripter">
+      <UniqueIdentifier>{8d9f09f3-2cb2-4bf8-b0c4-9356c5882afa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rdParty">
+      <UniqueIdentifier>{5b979a9c-6102-4ca1-800a-ed8d19ab2529}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rdParty\V8Engine">
+      <UniqueIdentifier>{fe42e3a1-4531-43f3-9a56-098b3daaa67b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AtomEngine\scene">
+      <UniqueIdentifier>{2cac59e7-69b8-4c06-9379-a0973545a1bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rdParty\Lua">
+      <UniqueIdentifier>{ca45a853-3799-4812-b9ae-510984a14b03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AtomEngine\handle">
+      <UniqueIdentifier>{e85257bc-a8ab-43c2-a752-84a4cb4e51da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AtomEngine\gl">
+      <UniqueIdentifier>{5a72ed0e-4b84-4da2-ac4b-a6afde41be40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AtomEngine\gl\picture">
+      <UniqueIdentifier>{e485e26e-6b1f-41d3-928a-a1b3770f2545}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AtomEngine\gl\model">
+      <UniqueIdentifier>{f3fab0e4-2104-44ab-bcd2-b17ea8353fd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AtomEngine\gl\sound">
+      <UniqueIdentifier>{aaf9cf83-5af4-4d94-8bd8-433e8bef8728}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AtomEngine\gl\input">
+      <UniqueIdentifier>{bab9c12e-dbb6-44ad-ae83-3b764f3c2a50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AtomEngine\gl\input\joypad">
+      <UniqueIdentifier>{219a5d16-446c-437f-ac35-826106c46332}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AtomEngine\gl\input\mic">
+      <UniqueIdentifier>{fd2d05d7-f5fe-46e0-ab8b-b727dbb4361e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AtomEngine\gl\input\camera">
+      <UniqueIdentifier>{35c24409-d4e5-4acf-9894-f3b463e5277c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AtomEngine\gl\text">
+      <UniqueIdentifier>{92ca35e8-2246-4fc9-b635-69d9d463bda8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AtomEngine\gl\screen">
+      <UniqueIdentifier>{397e374c-650a-41d6-9b0a-e1c2a3fdf1b9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="aen.cpp">
+      <Filter>AtomEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="aen_handle.cpp">
+      <Filter>AtomEngine\handle</Filter>
+    </ClCompile>
+    <ClCompile Include="aen_hash.cpp">
+      <Filter>AtomEngine\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="aen_scene.cpp">
+      <Filter>AtomEngine\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="aen_util.cpp">
+      <Filter>AtomEngine\util</Filter>
+    </ClCompile>
+    <ClCompile Include="aen_profiler.cpp">
+      <Filter>AtomEngine\profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="aen_handle_manager.cpp">
+      <Filter>AtomEngine\handle</Filter>
+    </ClCompile>
+    <ClCompile Include="aen_gl.cpp">
+      <Filter>AtomEngine\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="aen_gl_picture.cpp">
+      <Filter>AtomEngine\gl\picture</Filter>
+    </ClCompile>
+    <ClCompile Include="aen_gl_text.cpp">
+      <Filter>AtomEngine\gl\text</Filter>
+    </ClCompile>
+    <ClCompile Include="aen_gl_input.cpp">
+      <Filter>AtomEngine\gl\input</Filter>
+    </ClCompile>
+    <ClCompile Include="aen_scripter.cpp">
+      <Filter>AtomEngine\scripter</Filter>
+    </ClCompile>
+    <ClCompile Include="aen_system.cpp">
+      <Filter>AtomEngine\system</Filter>
+    </ClCompile>
+    <ClCompile Include="aen_gl_screen.cpp">
+      <Filter>AtomEngine\gl\screen</Filter>
+    </ClCompile>
+    <ClCompile Include="aen_gl_sound.cpp">
+      <Filter>AtomEngine\gl\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="aen_gl_model.cpp">
+      <Filter>AtomEngine\gl\model</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="def.h">
+      <Filter>AtomEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="aen.h">
+      <Filter>AtomEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="aen_handle.h">
+      <Filter>AtomEngine\handle</Filter>
+    </ClInclude>
+    <ClInclude Include="aen_hash.h">
+      <Filter>AtomEngine\hash</Filter>
+    </ClInclude>
+    <ClInclude Include="aen_scene.h">
+      <Filter>AtomEngine\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="aen_util.h">
+      <Filter>AtomEngine\util</Filter>
+    </ClInclude>
+    <ClInclude Include="aen_profiler.h">
+      <Filter>AtomEngine\profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="aen_handle_manager.h">
+      <Filter>AtomEngine\handle</Filter>
+    </ClInclude>
+    <ClInclude Include="aen_gl.h">
+      <Filter>AtomEngine\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="aen_gl_picture.h">
+      <Filter>AtomEngine\gl\picture</Filter>
+    </ClInclude>
+    <ClInclude Include="aen_gl_text.h">
+      <Filter>AtomEngine\gl\text</Filter>
+    </ClInclude>
+    <ClInclude Include="aen_gl_input.h">
+      <Filter>AtomEngine\gl\input</Filter>
+    </ClInclude>
+    <ClInclude Include="aen_scripter.h">
+      <Filter>AtomEngine\scripter</Filter>
+    </ClInclude>
+    <ClInclude Include="aen_system.h">
+      <Filter>AtomEngine\system</Filter>
+    </ClInclude>
+    <ClInclude Include="aen_gl_screen.h">
+      <Filter>AtomEngine\gl\screen</Filter>
+    </ClInclude>
+    <ClInclude Include="aen_gl_sound.h">
+      <Filter>AtomEngine\gl\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="aen_import_lua.h">
+      <Filter>3rdParty\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="aen_gl_model.h">
+      <Filter>AtomEngine\gl\model</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

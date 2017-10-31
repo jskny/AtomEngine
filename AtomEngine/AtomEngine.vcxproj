@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{53D973CF-3A38-4882-935D-5C45CF9D7836}</ProjectGuid>
+    <RootNamespace>AtomEngine</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="aen.cpp" />
+    <ClCompile Include="aen_gl.cpp" />
+    <ClCompile Include="aen_gl_input.cpp" />
+    <ClCompile Include="aen_gl_model.cpp" />
+    <ClCompile Include="aen_gl_picture.cpp" />
+    <ClCompile Include="aen_gl_screen.cpp" />
+    <ClCompile Include="aen_gl_sound.cpp" />
+    <ClCompile Include="aen_gl_text.cpp" />
+    <ClCompile Include="aen_handle.cpp" />
+    <ClCompile Include="aen_handle_manager.cpp" />
+    <ClCompile Include="aen_hash.cpp" />
+    <ClCompile Include="aen_profiler.cpp" />
+    <ClCompile Include="aen_scene.cpp" />
+    <ClCompile Include="aen_scripter.cpp" />
+    <ClCompile Include="aen_system.cpp" />
+    <ClCompile Include="aen_util.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="aen.h" />
+    <ClInclude Include="aen_gl.h" />
+    <ClInclude Include="aen_gl_input.h" />
+    <ClInclude Include="aen_gl_model.h" />
+    <ClInclude Include="aen_gl_picture.h" />
+    <ClInclude Include="aen_gl_screen.h" />
+    <ClInclude Include="aen_gl_sound.h" />
+    <ClInclude Include="aen_gl_text.h" />
+    <ClInclude Include="aen_handle.h" />
+    <ClInclude Include="aen_handle_manager.h" />
+    <ClInclude Include="aen_hash.h" />
+    <ClInclude Include="aen_profiler.h" />
+    <ClInclude Include="aen_scene.h" />
+    <ClInclude Include="aen_system.h" />
+    <ClInclude Include="aen_util.h" />
+    <ClInclude Include="def.h" />
+    <ClInclude Include="aen_scripter.h" />
+    <ClInclude Include="aen_import_lua.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
